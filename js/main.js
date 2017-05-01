@@ -14,39 +14,58 @@ $(function() {
       $('#gamegrid').attr('class', 'turn_x')
     }
 
+function textdisp(letter) {
+  $('body').append($(letter));
+};
 
     if ($('.block.one p').attr('class') === 'x' && $('.block.two p').attr('class') === 'x' && $('.block.three p').attr('class') === 'x') {
-      console.log('X wins the game');
+      $('#turntext1').text('x wins the game!').css('font-size', '65px');
+      $('#gamegrid').fadeOut();
     } else if ($('.block.one p').attr('class') === 'o' && $('.block.two p').attr('class') === 'o' && $('.block.three p').attr('class') === 'o') {
-      console.log('O wins the game');
+      $('#turntext1').text('o wins the game!').css('font-size', '65px');
+      $('#gamegrid').fadeOut();
     } else if ($('.block.four p').attr('class') === 'x' && $('.block.five p').attr('class') === 'x' && $('.block.six p').attr('class') === 'x') {
-      console.log('X wins the game');
+      $('#turntext1').text('x wins the game!').css('font-size', '65px');
+      $('#gamegrid').fadeOut();
     } else if ($('.block.four p').attr('class') === 'o' && $('.block.five p').attr('class') === 'o' && $('.block.six p').attr('class') === 'o') {
-      console.log('O wins the game');
+      $('#turntext1').text('o wins the game!').css('font-size', '65px');
+      $('#gamegrid').fadeOut();
     } else if ($('.block.seven p').attr('class') === 'x' && $('.block.eight p').attr('class') === 'x' && $('.block.nine p').attr('class') === 'x') {
-      console.log('X wins the game');
+      $('#turntext1').text('x wins the game!').css('font-size', '65px');
+      $('#gamegrid').fadeOut();
     } else if ($('.block.seven p').attr('class') === 'o' && $('.block.eight p').attr('class') === 'o' && $('.block.nine p').attr('class') === 'o') {
-      console.log('O wins the game'); // LEFT TO RIGHT ENDS HERE, TOP TO BOTTOM BEGINS HERE
+      $('#turntext1').text('o wins the game!').css('font-size', '65px');
+      $('#gamegrid').fadeOut(); // LEFT TO RIGHT ENDS HERE, TOP TO BOTTOM BEGINS HERE
     } else if ($('.block.one p').attr('class') === 'x' && $('.block.four p').attr('class') === 'x' && $('.block.seven p').attr('class') === 'x') {
-      console.log('X wins the game');
+      $('#turntext1').text('x wins the game!').css('font-size', '65px');
+      $('#gamegrid').fadeOut();
     } else if ($('.block.one p').attr('class') === 'o' && $('.block.four p').attr('class') === 'o' && $('.block.seven p').attr('class') === 'o') {
-      console.log('O wins the game');
+      $('#turntext1').text('o wins the game!').css('font-size', '65px');
+      $('#gamegrid').fadeOut();
     } else if ($('.block.two p').attr('class') === 'x' && $('.block.five p').attr('class') === 'x' && $('.block.eight p').attr('class') === 'x') {
-      console.log('X wins the game');
+      $('#turntext1').text('x wins the game!').css('font-size', '65px');
+      $('#gamegrid').fadeOut();
     } else if ($('.block.two p').attr('class') === 'o' && $('.block.five p').attr('class') === 'o' && $('.block.eight p').attr('class') === 'o') {
-      console.log('O wins the game');
+      $('#turntext1').text('o wins the game!').css('font-size', '65px');
+      $('#gamegrid').fadeOut();
     } else if ($('.block.three p').attr('class') === 'x' && $('.block.six p').attr('class') === 'x' && $('.block.nine p').attr('class') === 'x') {
-      console.log('X wins the game');
+      $('#turntext1').text('x wins the game!').css('font-size', '65px');
+      $('#gamegrid').fadeOut();
     } else if ($('.block.three p').attr('class') === 'o' && $('.block.six p').attr('class') === 'o' && $('.block.nine p').attr('class') === 'o') {
-      console.log('O wins the game'); //TOP DOWN ENDS HERE
+      $('#turntext1').text('o wins the game!').css('font-size', '65px');
+      $('#gamegrid').fadeOut(); //TOP DOWN ENDS HERE
     } else if ($('.block.one p').attr('class') === 'o' && $('.block.five p').attr('class') === 'o' && $('.block.nine p').attr('class') === 'o') {
-      console.log('O wins the game');
+      $('#turntext1').text('o wins the game!').css('font-size', '65px');
+      $('#gamegrid').fadeOut();
     } else if ($('.block.one p').attr('class') === 'x' && $('.block.five p').attr('class') === 'x' && $('.block.nine p').attr('class') === 'x') {
-      console.log('X wins the game');
+      $('#turntext1').text('x wins the game!').css('font-size', '65px');
+      $('#gamegrid').fadeOut();
     } else if ($('.block.three p').attr('class') === 'o' && $('.block.five p').attr('class') === 'o' && $('.block.seven p').attr('class') === 'o') {
-      console.log('O wins the game');
+      $('#turntext1').text('o wins the game!').css('font-size', '65px');
+      $('#gamegrid').fadeOut();
     } else if ($('.block.three p').attr('class') === 'x' && $('.block.five p').attr('class') === 'x' && $('.block.seven p').attr('class') === 'x') {
-      console.log('X wins the game');
+      $('#turntext1').text('x wins the game!').css('font-size', '65px');
+      $('#gamegrid').fadeOut();
     }
 
 
