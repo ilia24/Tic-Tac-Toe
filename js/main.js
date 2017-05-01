@@ -2,16 +2,16 @@ $(function() {
   console.log("JS loaded");
 
   $('#gamegrid').on('click', '.block', function(){
-    if ($('#gamegrid').attr('class') == 'x') {
-      $(this).prepend($('.x'))
+    if ($('#gamegrid').attr('class') == 'turn_x') {
+      $(this).append($('.x'))
 
       $('#turntext1').text("It is O's turn");
-      $('#gamegrid').attr('class', 'o')
+      $('#gamegrid').attr('class', 'turn_o')
     } else {
       $(this).prepend($('.o'))
 
       $('#turntext1').text("It is X's turn");
-      $('#gamegrid').attr('class', 'x')
+      $('#gamegrid').attr('class', 'turn_x')
     }
 
   });
