@@ -2,14 +2,14 @@ $(function() {
   console.log("JS loaded");
 
   $('#gamegrid').on('click', '.block', function(){
-    if ($('#gamegrid').attr('class') == 'turn_x') {
-      $(this).append($('.x'))
-
+    if ($('#gamegrid').attr('class') === 'turn_x' && $(this).attr('id') != 'clicked' )  {
+      $(this).append($('<p class="x">X</p>'))
+      $(this).attr('id', 'clicked')
       $('#turntext1').text("It is O's turn");
       $('#gamegrid').attr('class', 'turn_o')
-    } else {
-      $(this).prepend($('.o'))
-
+    } else if ($('#gamegrid').attr('class') === 'turn_o' && $(this).attr('id') != 'clicked' ) {
+      $(this).append($('<p class="o">O</p>'))
+      $(this).attr('id', 'clicked')
       $('#turntext1').text("It is X's turn");
       $('#gamegrid').attr('class', 'turn_x')
     }
