@@ -1,17 +1,20 @@
 $(function() {
-  console.log("JS loaded");
+console.log("JS loaded");
+count = 0;
 
   $('#gamegrid').on('click', '.block', function(){
     if ($('#gamegrid').attr('class') === 'turn_x' && $(this).attr('id') != 'clicked' )  {
-      $(this).append($('<p class="x">X</p>'))
-      $(this).attr('id', 'clicked')
+      $(this).append($('<p class="x">X</p>'));
+      $(this).attr('id', 'clicked');
       $('#turntext1').text("It is O's turn");
-      $('#gamegrid').attr('class', 'turn_o')
+      $('#gamegrid').attr('class', 'turn_o');
+      count++;
     } else if ($('#gamegrid').attr('class') === 'turn_o' && $(this).attr('id') != 'clicked' ) {
-      $(this).append($('<p class="o">O</p>'))
-      $(this).attr('id', 'clicked')
+      $(this).append($('<p class="o">O</p>'));
+      $(this).attr('id', 'clicked');
       $('#turntext1').text("It is X's turn");
-      $('#gamegrid').attr('class', 'turn_x')
+      $('#gamegrid').attr('class', 'turn_x');
+      count++;
     }
 
 function textdisp(letter) {
@@ -65,6 +68,9 @@ function textdisp(letter) {
       $('#gamegrid').fadeOut();
     } else if ($('.block.three p').attr('class') === 'x' && $('.block.five p').attr('class') === 'x' && $('.block.seven p').attr('class') === 'x') {
       $('#turntext1').text('x wins the game!').css('font-size', '65px');
+      $('#gamegrid').fadeOut();
+    } else if (count === 9) {
+      $('#turntext1').text('Its a Draw!').css('font-size', '65px');
       $('#gamegrid').fadeOut();
     }
 
