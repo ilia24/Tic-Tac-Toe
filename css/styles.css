@@ -59,6 +59,7 @@ li > .o {
   font-size: 130px;
   font-family: 'Baloo';
   margin: 0px auto;
+  height: 50%;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
