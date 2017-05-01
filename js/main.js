@@ -2,6 +2,22 @@ $(function() {
   console.log("JS loaded");
 
   $('#gamegrid').on('click', '.block', function(){
-    $(this).attr('class', 'occupiedblock');
+    if ($('#gamegrid').attr('class') == 'x') {
+      $(this).prepend($('.x'))
+
+      $('#turntext1').text("It is O's turn");
+      $('#gamegrid').attr('class', 'o')
+    } else {
+      $(this).prepend($('.o'))
+
+      $('#turntext1').text("It is X's turn");
+      $('#gamegrid').attr('class', 'x')
+    }
+
   });
 });
+
+
+// make a general class for turn, update that everytime
+// every turn update the class of the list item to be X or O
+// then do an if statement to check if theres 3 x's or 0's
