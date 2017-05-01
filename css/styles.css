@@ -10,6 +10,13 @@ h1{
   text-align: center;
 }
 
+h2{
+  font-family: 'Baloo', cursive;
+  font-size: 35px;
+  text-align: center;
+}
+
+
 
 #gamegrid {
   width: 100%;
@@ -30,10 +37,26 @@ body{
   border-color: rgb(53, 102, 117);
   border-radius: 10px;
   background-color: rgb(255, 96, 0);
+  position: relative;
+}
+.icon.x{
+  color: black;
+  position: absolute;
+  top: -4%;
+  left: 12%;
+}
+
+.icon.o {
+  color: black);
+  position: absolute;
+  top: -4%;
+  left: 7%;
 }
 
 li > .icon {
-  font-size: 20px;
+  font-size: 130px;
+  font-family: 'Baloo';
+  margin: 0px auto;
 }
 
   /*background-color: rgb(107, 195, 222);*/
